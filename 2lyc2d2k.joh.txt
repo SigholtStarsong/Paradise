@@ -1,0 +1,12 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch Vox-Skipjack-Console-Fix
+# Changes to be committed:
+#	modified:   code/game/machinery/computer/computer.dm
+#	modified:   code/modules/shuttle/shuttle.dm
+#
+# Changes not staged for commit:
+#	modified:   config/example/admins.txt
+#
+Vox Skipjack Console: Now with self-sealing stem bolts!

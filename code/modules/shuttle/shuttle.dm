@@ -761,6 +761,7 @@
 	req_access = list(access_vox)
 	shuttleId = "skipjack"
 	possible_destinations = "skipjack_away;skipjack_ne;skipjack_nw;skipjack_se;skipjack_sw;skipjack_z5"
+	screwdriver_immune = 1
 
 /obj/machinery/computer/shuttle/engineering
 	name = "Engineering Shuttle Console"
