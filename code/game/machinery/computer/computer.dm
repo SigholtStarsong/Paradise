@@ -14,7 +14,6 @@
 	var/light_range_on = 2
 	var/light_power_on = 1
 	var/overlay_layer
-	var/screwdriver_immune = 0
 	atom_say_verb = "beeps"
 
 /obj/machinery/computer/New()
@@ -111,7 +110,7 @@
 	return ..()
 
 /obj/machinery/computer/attackby(I as obj, user as mob, params)
-	if(istype(I, /obj/item/weapon/screwdriver) && circuit && !screwdriver_immune)
+	if(istype(I, /obj/item/weapon/screwdriver) && circuit)
 		playsound(src.loc, 'sound/items/Screwdriver.ogg', 50, 1)
 		if(do_after(user, 20, target = src))
 			var/obj/structure/computerframe/A = new /obj/structure/computerframe( src.loc )
